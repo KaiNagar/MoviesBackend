@@ -13,6 +13,7 @@ public class MoviesApiApplication {
 		SpringApplication.run(MoviesApiApplication.class, args);
 	}
 
+
 	//	#Simple Connect to localhost:8080 to check connection to server
 	//	@GetMapping("/")
 	//	public String apiRoot(){
