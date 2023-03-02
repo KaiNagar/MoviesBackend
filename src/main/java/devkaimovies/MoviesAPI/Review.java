@@ -17,4 +17,9 @@ public class Review {
     private ObjectId id;
 
     private String body;
+
+//    SHOW THEM THE GENERATE!!!!!
+    public Review(String body) {
+        this.body = body;
+    }
 }
