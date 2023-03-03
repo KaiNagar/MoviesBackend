@@ -23,7 +23,7 @@ public class ReviewService {
 //        insert return us the new object we just pushed so we can write it like this
 //        Review review =  reviewRepository.insert(review);
 
-//        THIS IS AGGREGATION!!! DONT BE SCARED IT S KIND OF FUN IF YOU THINK ABOUT IT!!
+//        THIS IS AGGREGATION!!! DONT BE SCARED IT IS KIND OF FUN IF YOU THINK ABOUT IT!!
         mongoTemplate.update(Movie.class)
                 .matching(Criteria.where("imdbId").is(imdbId))// finding the right movie to update
                 .apply(new Update().push("reviewIds").value(review))
